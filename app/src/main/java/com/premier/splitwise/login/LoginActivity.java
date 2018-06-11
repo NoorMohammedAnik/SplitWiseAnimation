@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 view.startAnimation(animTranslate);
                 Intent intent=new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.goup, R.anim.godown);//for animation
 
             }
         });
